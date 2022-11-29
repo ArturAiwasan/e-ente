@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="author" content="arbtttrn6" >
+<meta name="date" content="2022-11-29T10:27:44+0300" >
+<meta name="copyright" content="arbtttrn6">
+<meta name="keywords" content="e-ente, tekstigilo, e lingvoj, e jezyki, е языки">
+<meta name="description" content="Eigado de teksto">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+</head>
+<body>
+
+<form name="fenestro">
+   	<textarea name="fontteksto" placeholder="Enigu tekston"></textarea>
+</form>
+
+<p id="rezulto"></p>
+
+<script type="text/javascript">
+			
+const enigo = document.getElementsByName('fontteksto');
+const rezulto = document.getElementById('rezulto');
+			
+function anstatauigi(valuo) {
+	eligo = valuo.value.replace(/a|e|u|y|i|o|ä|ě|é|ý|ů|í|ó|ö|á|ë|ú|ü|ô/g,"e");
+	eligo = eligo.replace(/A|E|U|Y|I|O|Ä|Ě|É|Ý|Ů|Í|Ó|Ö|Á|Ë|Ú|Ü|Ô/g,"E");
+	eligo = eligo.replace(/у|е|ы|а|о|э|я|и|ю/g,"е");
+	eligo = eligo.replace(/У|Е|Ы|А|О|Э|Я|И|Ю/g,"Е");				
+	eligo = eligo.replace(/У|Е|Ы|А|О|Э|Я|И|Ю/g,"Е");				
+	eligo = eligo.replace(/ա|ե|է|ը|ի|ո|օ/g,"ե");
+	eligo = eligo.replace(/Ա|Ե|Է|Ը|Ի|Ո|Օ/g,"Ե");
+	
+	return rezulto.textContent = eligo;
+}
+			
+enigo[0].addEventListener("input", function handleChange(event) {anstatauigi(event.target);});
+</script>
+</body>
+</html>
