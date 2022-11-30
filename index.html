@@ -3,20 +3,20 @@
 <head>
 <title></title>
 <meta name="author" content="arbtttrn6" >
-<meta name="date" content="2022-11-29T10:27:44+0300" >
+<meta name="date" content="2022-11-30T21:57:38+0300" >
 <meta name="copyright" content="arbtttrn6">
 <meta name="keywords" content="e-ente, tekstigilo, e lingvoj, e jezyki, е языки">
 <meta name="description" content="Eigado de teksto">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-style-type" content="text/css">
 </head>
-<body>
+<body style="background-color: #008081; display: flex; flex-direction: column; align-items: center;">
 
 <form name="fenestro">
    	<textarea name="fontteksto" placeholder="Enigu tekston"></textarea>
 </form>
 
-<p id="rezulto"></p>
+<pre id="rezulto" style="background-color: #ffffff; padding: 1px;"></pre>
 
 <script type="text/javascript">
 			
@@ -26,9 +26,8 @@ const rezulto = document.getElementById('rezulto');
 function anstatauigi(valuo) {
 	eligo = valuo.value.replace(/a|e|u|y|i|o|ä|ě|é|ý|ů|í|ó|ö|á|ë|ú|ü|ô/g,"e");
 	eligo = eligo.replace(/A|E|U|Y|I|O|Ä|Ě|É|Ý|Ů|Í|Ó|Ö|Á|Ë|Ú|Ü|Ô/g,"E");
-	eligo = eligo.replace(/у|е|ы|а|о|э|я|и|ю/g,"е");
-	eligo = eligo.replace(/У|Е|Ы|А|О|Э|Я|И|Ю/g,"Е");				
-	eligo = eligo.replace(/У|Е|Ы|А|О|Э|Я|И|Ю/g,"Е");				
+	eligo = eligo.replace(/ё|у|е|ы|а|о|э|я|и|ю|є|ԑ|і|ᲂ|ү|ѣ|ᲇ|а́|а̀|ӑ|а͏̆|ӓ|ӓ̄|а̄|а̊|а̃|е́|ѐ|ӗ|е͏̆|ё|ё̄|е̄|е̃|є̈|є́|и́|ѝ|и͏̆|ҋ|ӥ|ӣ|и̃|і́|ї́|ѷ|о́|о̀|о̂|о̆|о͏̆|ӧ|ө̆|ӫ|ѽ|ұ|ў|ю̈́/g,"е");
+	eligo = eligo.replace(/Ё|У|Е|Ы|А|О|Э|Я|И|Ю|Є|Ԑ|І|Ү|Ѣ|А́|А̀|Ӑ|А͏̆|Ӓ|Ӓ̄|А̄|А̊|А̃|Е́|Ѐ|Ӗ|Е͏̆|Ё́|Ё̄|Е̄|Е̃|Є̈|Є́|И́|Ѝ|И͏̆|Ҋ|Ӥ|Ӣ|И̃|І́|Ї́|Ѷ|О́|О̀|О̂|О̆|О͏̆|Ӧ|Ө|Ө̆|Ӫ|Ѽ|Ұ|Ў|Ю̈́/g,"Е");				
 	eligo = eligo.replace(/ա|ե|է|ը|ի|ո|օ/g,"ե");
 	eligo = eligo.replace(/Ա|Ե|Է|Ը|Ի|Ո|Օ/g,"Ե");
 	
