@@ -2,5 +2,8 @@
 *EO*  
 Eigi tekston  
   
-*RU*
+*RU*  
 Еизировать текст  
+
+*ISV*  
+Eizirovati tekst
