@@ -1,2 +1,6 @@
 # e-ente
-Eigi tekston
+*EO*  
+Eigi tekston  
+  
+*RU*
+Еизировать текст  
